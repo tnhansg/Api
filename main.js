@@ -71,7 +71,7 @@ res.json({
         "images": {
             "GET": {
                 "girl": "images/girl",
-                "vu": "images/vu",
+                "sex": "images/sex",
                 "mong": "images/mong",
                 "ma": "images/ma",
                 "du": "images/du",
