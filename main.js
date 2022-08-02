@@ -40,42 +40,19 @@ app.get('/', function(req, res) {
   //  response.send(result);
      
 res.json({
-    "message": "API BY TNHAN",
-    "apikey": {
-        "create": "/apikey?type=register&name=tnhan",
-        "recover_key": "/apikey?type=recover&ip_address=IP_address",
-        "checker": "/apikey?type=checker&apikey=APIKEY"
-    },
+    "message": "API NO KEY BY TNHAN",
     "example": {
         "facebook": {
-            "info_user_facebook": "/facebook/info?uid=1535220001",
             "find_uid_facebook": "/finduid?url=<url profile, story, post, video,...>",
             "download_facebook": "/v2/fbget?url=<url> (download được stories)"
         },
-        "canvas": {
-            "avatarAnime": {
-                "image": "/taoanhdep/avatarwibu?id=26&chu_nen=nguyenthiennhan&chu_ky=tnhan",
-                "list": "/taoanhdep/list",
-                "search": "/taoanhdep/search?key=Siesta"
-            },
-            "fbcover": {
-                "v1": "/fbcover/v1?name=<tên của bạn>&uid=<uid facebook>&address=<địa chỉ>&email=<email>&subname=<tên phụ>&sdt=<sdt>&color=no",
-                "v2": "/fbcover/v2?name=<name>&id=5&subname=tnhan"
-            },
-            "thuphap": "/thuphap?id=1&sodong=3&dong_1=Nguyễn Thiện Nhân&dong_2=Nguyễn Thiện Nhân&dong_3=Nguyễn Thiện Nhân",
-            "tiki": "/tiki?Nguyễn Thiện Nhân",
-            "blink": "/blink?id=",
-            "danhthiep": "/shopmaihuong?text1=Nguyen Thien Nhan&text2=0258965JQK",
-            "giangsinh": "/giangsinh?text=tnhan"
-        },
         "images": {
             "GET": {
-                "girl": "images/girl",
-                "sex": "images/sex",
-                "mong": "images/mong",
-                "ma": "images/ma",
-                "du": "images/du",
-                "ausand": "images/ausand"
+                "girl": "/images/girl",
+                "sex": "/images/sex",
+                "mong": "/images/mong",
+                "ma": "/images/ma",
+                "du": "/images/du"
             },
         },
         "GAME": {
