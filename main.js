@@ -52,7 +52,10 @@ res.json({
                 "sex": "/images/sex",
                 "mong": "/images/mong",
                 "ma": "/images/ma",
-                "du": "/images/du"
+                "du": "/images/du",
+                "instagram":"/iamges/instagram",
+                "twitter":"/images/tw",
+                "video girl china":"/images/china"
             },
         },
         "GAME": {
