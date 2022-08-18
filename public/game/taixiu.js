@@ -2,9 +2,8 @@ exports.name = '/taixiu';
 exports.index = async(req, res, next) => {
 var images = ['https://i.imgur.com/6gxyDgx.jpg', 'https://i.imgur.com/3mAifz1.jpg', 'https://i.imgur.com/etWAB9I.jpg', 'https://i.imgur.com/vplFgB1.jpg', 'https://i.imgur.com/BVCSxm3.jpg', 'https://i.imgur.com/PvF2gOz.jpg']
     const result = {}
-    result.author = "Citnut"
+    result.author = "tnhan"
     res.header("Content-type", "application/json; charset=utf-8")
-    const mylink = "/game/v2"
     let bet = req.query.method
     const methodmap = {
         "tai": "tài",
@@ -33,10 +32,10 @@ var images = ['https://i.imgur.com/6gxyDgx.jpg', 'https://i.imgur.com/3mAifz1.jp
             "bodoichinhxac": "Cược đôi chính xác Sẽ thắng cược khi 2 trong ba con xúc xắc hiển thị chính xác cặp đôi mà người chơi đã chọn."
         },
         "value": "số bất kì từ 1 đến 6 nếu cược số, từ 111 đến 666 nếu cược bộ, từ 11 đến 66 nếu cược đôi, từ 3 đến 18 nếu cược tổng",
-        "hd sử dụng": `${mylink}/taixiu?method={method}`,
-        "sử dụng value": `${mylink}/taixiu?method={method}&value={value}t`,
-        "Ví dụ": `/game/v2/taixiu?method=xiu&value=10`,
-        "Test": `https://API.kadeeruwu.repl.co/game/v2/taixiu?method=xiu&value=10`
+        "hd sử dụng": `/taixiu?method={method}`,
+        "sử dụng value": `/taixiu?method={method}&value={value}t`,
+        "Ví dụ": `/taixiu?method=xiu&value=10`,
+        "Test": `https://api.thiennhan.studio/taixiu?method=xiu&value=10`
     }
     if (!Object.keys(methodmap).includes(bet)) { res.send(JSON.stringify(gamemap, null, 2)) }
 
