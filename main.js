@@ -40,7 +40,7 @@ app.get('/', function(req, res) {
   //  response.send(result);
      
 res.json({
-    "message": "API NO KEY BY TNHAN",
+    "message": "API NO KEY",
     "example": {
         "facebook": {
             "find_uid_facebook": "/finduid?url=<url profile, story, post, video,...>",
