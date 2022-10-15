@@ -4,11 +4,11 @@ exports.index = async(req, res, next) => {
         const china = require('./data/json/china.json');
         var image = china[Math.floor(Math.random() * china.length)].trim();
         const cadao = require('./data/json/cadao.json');
-        var fast1 = cadao[Math.floor(Math.random() * cadao.length)].trim();
+        var fact1 = cadao[Math.floor(Math.random() * cadao.length)].trim();
         res.jsonp({
             url: image,
             count: china.length,
-            fast: fast1,
+            fast: fact1,
             author: 'tnhan'
         });
     } catch (e) {
